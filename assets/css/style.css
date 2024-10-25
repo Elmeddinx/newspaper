@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.montserrat-medium {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.montserrat-semibold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.montserrat-extrabold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.montserrat-black {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.navbar-custom {
+  background-color: #d50101;
+  padding: 36px 0;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+  color: white;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #d9d9d9;
+}
+
+.navbar-nav {
+  -moz-column-gap: 42px;
+       column-gap: 42px;
+}
+@media only screen and (max-width: 1200px) {
+  .navbar-nav {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .navbar-nav {
+    padding-top: 30px;
+    row-gap: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.navbar-toggler {
+  border-color: white;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.search-input {
+  padding-left: 36px;
+  outline: none !important;
+}
+.search-input::-moz-placeholder {
+  color: #fff;
+}
+.search-input::placeholder {
+  color: #fff;
+}
+.search-input:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #fff;
+}
+
+.search-form-lg {
+  display: none !important;
+}
+@media only screen and (min-width: 1024px) {
+  .search-form-lg {
+    display: flex !important;
+  }
+}
+
+.search-form-mb {
+  display: none !important;
+}
+@media only screen and (max-width: 1024px) {
+  .search-form-mb {
+    display: flex !important;
+  }
+}/*# sourceMappingURL=style.css.map */
