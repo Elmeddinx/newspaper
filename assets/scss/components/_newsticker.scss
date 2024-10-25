@@ -1,0 +1,35 @@
+.news-ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 35px 0 20px 0;
+    border-bottom: 1px solid #858585;
+}
+.news-ticker-inner {
+    width: 100%;
+    .news-ticker-items {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        column-gap: 8px;
+        animation: marquee 30s linear infinite;
+        .news-ticker-item {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: #d50101;
+                font-size: 21px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+}
+@keyframes marquee {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
