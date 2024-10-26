@@ -1,0 +1,201 @@
+.sidebar {
+    .row {
+        row-gap: 40px;
+    }
+    .widget-1 {
+        order: 1;
+        .form-check-label {
+            span {
+                color: #9d0098;
+                font-size: 14px;
+            }
+        }
+    }
+    .widget-2 {
+        order: 2;
+        .card-title {
+            color: #000;
+            font-size: 21px;
+        }
+        .card-text {
+            color: #636363;
+            font-size: 16px;
+        }
+        .input-group-text {
+            background-color: #d9d9d9;
+            border: none;
+            border-radius: 8px 0 0 8px;
+        }
+        .form-control {
+            border: none;
+            background: #d9d9d9;
+            border-radius: 0 8px 8px 0;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .btn-send {
+            background-color: #d50101;
+            color: white;
+            border-radius: 8px;
+            border: none;
+        }
+        .btn-send:hover {
+            background-color: #b80000;
+        }
+    }
+    .widget-3 {
+        order: 3;
+        .row {
+            &:first-child {
+                row-gap: 18px;
+            }
+        }
+        .card-title {
+            overflow: hidden;
+            color: #000;
+            text-overflow: ellipsis;
+            font-size: 17px;
+        }
+        img {
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 8px;
+        }
+        .card-footer {
+            .post-category {
+                padding-left: 0;
+            }
+        }
+        .col-sm-4 {
+            @include mq(tablet-portrait-up) {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
+        }
+        .col-sm-8 {
+            @include mq(tablet-portrait-up) {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+        }
+    }
+    .widget-4 {
+        order: 4;
+        .form-control {
+            display: none;
+        }
+        .flatpickr-calendar.inline {
+            width: 100%;
+            border-radius: 16px;
+            background: #f5f5f5;
+            .flatpickr-months {
+                width: 100%;
+            }
+            .flatpickr-innerContainer {
+                width: 100%;
+                .flatpickr-rContainer {
+                    width: 100%;
+                    .flatpickr-days {
+                        width: 100% !important;
+                        .dayContainer {
+                            width: 100%;
+                            min-width: 100%;
+                            max-width: 100%;
+                            .flatpickr-day {
+                                color: #0f2552;
+                                &.selected,
+                                &.startRange,
+                                &.endRange,
+                                &.selected.inRange,
+                                &.startRange.inRange,
+                                &.endRange.inRange,
+                                &.selected:focus,
+                                &.startRange:focus,
+                                &.endRange:focus,
+                                &.selected:hover,
+                                &.startRange:hover,
+                                &.endRange:hover,
+                                &.selected.prevMonthDay,
+                                &.startRange.prevMonthDay,
+                                &.endRange.prevMonthDay,
+                                &.selected.nextMonthDay,
+                                &.startRange.nextMonthDay,
+                                &.endRange.nextMonthDay,
+                                &.today {
+                                    background-color: #1f95af;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media  (min-width: 768px) and (max-width: 992px) {
+    main {
+        .sidebar {
+            margin-top: 1.5rem !important;
+            .row {
+                flex-direction: row !important;
+            }
+            .widget-1 {
+                order: 1;
+            }
+            .widget-2 {
+                order: 3;
+            }
+            .widget-3 {
+                order: 2;
+            }
+            .widget-4 {
+                order: 4;
+            }
+        }
+    }
+}
+@media  only screen and (max-width: 768px) {
+    main {
+        .sidebar {
+            margin-top: 1.5rem !important;
+            .row {
+                flex-direction: row !important;
+            }
+            .widget-1 {
+                order: 1;
+            }
+            .widget-2 {
+                order: 4;
+            }
+            .widget-3 {
+                order: 3;
+            }
+            .widget-4 {
+                order: 2;
+            }
+        }
+    }
+}
+@media  only screen and (max-width: 576px) {
+    main {
+        .sidebar {
+            .widget-1 {
+                order: 1;
+            }
+            .widget-2 {
+                order: 2;
+            }
+            .widget-3 {
+                order: 3;
+            }
+            .widget-4 {
+                order: 4;
+            }
+        }
+    }
+}

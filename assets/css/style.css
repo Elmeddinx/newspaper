@@ -189,6 +189,18 @@
   background: red;
 }
 
+.card {
+  background-color: #f5f5f5;
+}
+.card a {
+  text-decoration: none;
+}
+.card-title {
+  font-size: 14px;
+}
+.card-title a {
+  color: #000;
+}
 .card img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -245,30 +257,219 @@
   color: #858585;
   font-size: 14px;
 }
-.card-footer .card-share-button {
+
+.card-share-button {
   cursor: pointer;
 }
 
+.sidebar .row {
+  row-gap: 40px;
+}
+.sidebar .widget-1 {
+  order: 1;
+}
+.sidebar .widget-1 .form-check-label span {
+  color: #9d0098;
+  font-size: 14px;
+}
+.sidebar .widget-2 {
+  order: 2;
+}
+.sidebar .widget-2 .card-title {
+  color: #000;
+  font-size: 21px;
+}
+.sidebar .widget-2 .card-text {
+  color: #636363;
+  font-size: 16px;
+}
+.sidebar .widget-2 .input-group-text {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+.sidebar .widget-2 .form-control {
+  border: none;
+  background: #d9d9d9;
+  border-radius: 0 8px 8px 0;
+}
+.sidebar .widget-2 .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+.sidebar .widget-2 .btn-send {
+  background-color: #d50101;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+.sidebar .widget-2 .btn-send:hover {
+  background-color: #b80000;
+}
+.sidebar .widget-3 {
+  order: 3;
+}
+.sidebar .widget-3 .row:first-child {
+  row-gap: 18px;
+}
+.sidebar .widget-3 .card-title {
+  overflow: hidden;
+  color: #000;
+  text-overflow: ellipsis;
+  font-size: 17px;
+}
+.sidebar .widget-3 img {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+  border-radius: 8px;
+}
+.sidebar .widget-3 .card-footer .post-category {
+  padding-left: 0;
+}
+@media only screen and (max-width: 768px) {
+  .sidebar .widget-3 .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sidebar .widget-3 .col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+}
+.sidebar .widget-4 {
+  order: 4;
+}
+.sidebar .widget-4 .form-control {
+  display: none;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline {
+  width: 100%;
+  border-radius: 16px;
+  background: #f5f5f5;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-months {
+  width: 100%;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer {
+  width: 100%;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer {
+  width: 100%;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days {
+  width: 100% !important;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day {
+  color: #0f2552;
+}
+.sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.selected, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.startRange, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.endRange, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.selected.inRange, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.startRange.inRange, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.endRange.inRange, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.selected:focus, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.startRange:focus, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.endRange:focus, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.selected:hover, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.startRange:hover, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.endRange:hover, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.selected.prevMonthDay, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.startRange.prevMonthDay, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.endRange.prevMonthDay, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.selected.nextMonthDay, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.startRange.nextMonthDay, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.endRange.nextMonthDay, .sidebar .widget-4 .flatpickr-calendar.inline .flatpickr-innerContainer .flatpickr-rContainer .flatpickr-days .dayContainer .flatpickr-day.today {
+  background-color: #1f95af;
+  color: #fff;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  main .sidebar {
+    margin-top: 1.5rem !important;
+  }
+  main .sidebar .row {
+    flex-direction: row !important;
+  }
+  main .sidebar .widget-1 {
+    order: 1;
+  }
+  main .sidebar .widget-2 {
+    order: 3;
+  }
+  main .sidebar .widget-3 {
+    order: 2;
+  }
+  main .sidebar .widget-4 {
+    order: 4;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .sidebar {
+    margin-top: 1.5rem !important;
+  }
+  main .sidebar .row {
+    flex-direction: row !important;
+  }
+  main .sidebar .widget-1 {
+    order: 1;
+  }
+  main .sidebar .widget-2 {
+    order: 4;
+  }
+  main .sidebar .widget-3 {
+    order: 3;
+  }
+  main .sidebar .widget-4 {
+    order: 2;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main .sidebar .widget-1 {
+    order: 1;
+  }
+  main .sidebar .widget-2 {
+    order: 2;
+  }
+  main .sidebar .widget-3 {
+    order: 3;
+  }
+  main .sidebar .widget-4 {
+    order: 4;
+  }
+}
 main {
   margin-top: 50px;
   margin-bottom: 100px;
 }
-main .card {
-  background-color: #f5f5f5;
+@media only screen and (max-width: 1200px) {
+  main .section-1 .right-side .row {
+    flex-direction: row !important;
+  }
 }
-main .card a {
-  text-decoration: none;
+@media only screen and (max-width: 1200px) {
+  main .section-1 .right-side .row .card-1 .card {
+    height: 100%;
+  }
 }
-main .card-title {
-  font-size: 14px;
+@media only screen and (max-width: 1200px) {
+  main .section-1 .right-side .row .card-1 .card .video-js {
+    height: 100%;
+  }
 }
-main .card-title a {
-  color: #000;
+@media only screen and (max-width: 1200px) {
+  main .section-1 .right-side .row .card-1 {
+    margin-top: 0 !important;
+  }
 }
-main .big-post-title {
+main .section-1 .big-post-title {
   font-size: 28px;
 }
-main .video-js {
+@media only screen and (max-width: 768px) {
+  main .section-1 .big-post-title {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  main .section-1 .big-post-title {
+    font-size: 16px;
+  }
+}
+main .section-1 .video-js {
   width: 100%;
   height: 194.45px;
   aspect-ratio: 16/9;
@@ -277,31 +478,43 @@ main .video-js {
   overflow: hidden;
 }
 @media only screen and (max-width: 768px) {
-  main .video-js {
+  main .section-1 .video-js {
     height: 300px;
   }
 }
-main .video-js .vjs-big-play-button {
+main .section-1 .video-js .vjs-big-play-button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
 }
-main .vjs-play-control .vjs-icon-placeholder:before,
-main .vjs-fullscreen-control .vjs-icon-placeholder:before,
-main .vjs-volume-menu-button .vjs-icon-placeholder:before {
+main .section-1 .vjs-play-control .vjs-icon-placeholder:before,
+main .section-1 .vjs-fullscreen-control .vjs-icon-placeholder:before,
+main .section-1 .vjs-volume-menu-button .vjs-icon-placeholder:before {
   color: white;
   font-size: 1.2rem;
 }
-main .vjs-control-bar {
+main .section-1 .vjs-control-bar {
   background-color: rgba(0, 0, 0, 0.5);
 }
-main .vjs-play-progress {
+main .section-1 .vjs-play-progress {
   background-color: #d50101;
 }
-main .vjs-load-progress {
+main .section-1 .vjs-load-progress {
   background-color: #666;
 }
-main .vjs-mute-control .vjs-volume-level {
+main .section-1 .vjs-mute-control .vjs-volume-level {
   background-color: #d50101;
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  main .section-1 .right-side .row .card-2 {
+    margin-top: 0 !important;
+  }
+}
+@media only screen and (min-width: 762px) and (max-width: 992px) and (min-width: 768px) {
+  main .section-1 .right-side .row .card-2 .card-sm img {
+    max-height: 100%;
+    height: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */

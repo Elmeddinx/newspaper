@@ -1,4 +1,14 @@
 .card {
+    background-color: #f5f5f5;
+    a {
+        text-decoration: none;
+    }
+    &-title {
+        font-size: 14px;
+        a {
+            color: #000;
+        }
+    }
     img {
         object-fit: cover;
         object-position: center center;
@@ -64,7 +74,8 @@
             font-size: 14px;
         }
     }
-    .card-share-button {
-        cursor: pointer;
-    }
+}
+
+.card-share-button {
+    cursor: pointer;
 }
