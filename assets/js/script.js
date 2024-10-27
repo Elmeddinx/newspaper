@@ -11,6 +11,7 @@ document.addEventListener("click", (event) => {
 });
 
 
+
 var swiper = new Swiper(".big-post-swiper", {
     autoplay: {
         delay: 2500,

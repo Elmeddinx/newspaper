@@ -642,6 +642,29 @@ footer hr {
   background-color: #fff;
 }
 
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.modal-dialog .modal-body ul {
+  row-gap: 24px;
+}
+.modal-dialog .modal-body ul li a {
+  color: #000;
+  font-size: 21px;
+  text-decoration: none;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.modal-dialog .modal-body ul li a img {
+  width: 32px;
+  height: 32px;
+}
+
 main {
   margin-top: 50px;
   margin-bottom: 140px;

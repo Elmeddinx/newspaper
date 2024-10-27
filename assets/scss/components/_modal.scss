@@ -1,0 +1,25 @@
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    .modal-body {
+        ul {
+            row-gap: 24px;
+            li {
+                a {
+                    color: #000;
+                    font-size: 21px;
+                    text-decoration: none;
+                    column-gap: 10px;
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+}
