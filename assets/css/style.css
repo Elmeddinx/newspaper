@@ -960,4 +960,11 @@ main .latest-video-block .vjs-mute-control .vjs-volume-level {
 main .article-share-section ul {
   -moz-column-gap: 40px;
        column-gap: 40px;
+}
+
+#single-category .category-title {
+  border-left: 9px solid #9d0098;
+  padding-left: 12px;
+  color: #000;
+  font-size: 24px;
 }/*# sourceMappingURL=style.css.map */

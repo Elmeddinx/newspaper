@@ -252,49 +252,7 @@ if (document.body.id === "home") {
             },
         },
     });
-    var changeFont = document.getElementById("change-font");
-    var changeFontCard = document.getElementById("change-font-card");
-    const fontSizeSlider = document.getElementById("fontSizeSlider");
-    const sliderOutput = document.getElementById("sliderOutput");
-    const changeText = document.querySelectorAll("article p");
 
-    if (changeFont) {
-        changeFont.addEventListener("click", (e) => {
-            changeFontCard.classList.toggle("active");
-        })
-
-        document.addEventListener("click", (event) => {
-            if (!changeFontCard.contains(event.target) && !changeFont.contains(event.target)) {
-                changeFontCard.classList.remove("active");
-            }
-        });
-        const fontSizes = {
-            50: "10.5px",
-            75: "15.75px",
-            100: "21px",
-            125: "26.25px",
-            150: "31.5px"
-        };
-
-        fontSizeSlider.addEventListener("input", function () {
-            const value = fontSizeSlider.value;
-            sliderOutput.textContent = value + "%";
-            changeText.forEach(p => {
-                p.style.fontSize = fontSizes[value]
-            });
-
-            const sliderWidth = fontSizeSlider.offsetWidth;
-            const max = fontSizeSlider.max;
-            const min = fontSizeSlider.min;
-            const percent = (value - min) / (max - min);
-            const offset = percent * sliderWidth;
-            const sliderRect = fontSizeSlider.getBoundingClientRect();
-            const thumbPosition = (value / (150 - 40)) * sliderRect.width;
-
-            sliderOutput.style.left = `${thumbPosition}px`;
-        });
-
-    }
 }
 flatpickr("#calendar", {
     dateFormat: "Y-m-d",
@@ -308,4 +266,46 @@ flatpickr("#calendar", {
         }
     }
 });
+var changeFont = document.getElementById("change-font");
+var changeFontCard = document.getElementById("change-font-card");
+const fontSizeSlider = document.getElementById("fontSizeSlider");
+const sliderOutput = document.getElementById("sliderOutput");
+const changeText = document.querySelectorAll("article p");
 
+if (changeFont) {
+    changeFont.addEventListener("click", (e) => {
+        changeFontCard.classList.toggle("active");
+    })
+
+    document.addEventListener("click", (event) => {
+        if (!changeFontCard.contains(event.target) && !changeFont.contains(event.target)) {
+            changeFontCard.classList.remove("active");
+        }
+    });
+    const fontSizes = {
+        50: "10.5px",
+        75: "15.75px",
+        100: "21px",
+        125: "26.25px",
+        150: "31.5px"
+    };
+
+    fontSizeSlider.addEventListener("input", function () {
+        const value = fontSizeSlider.value;
+        sliderOutput.textContent = value + "%";
+        changeText.forEach(p => {
+            p.style.fontSize = fontSizes[value]
+        });
+
+        const sliderWidth = fontSizeSlider.offsetWidth;
+        const max = fontSizeSlider.max;
+        const min = fontSizeSlider.min;
+        const percent = (value - min) / (max - min);
+        const offset = percent * sliderWidth;
+        const sliderRect = fontSizeSlider.getBoundingClientRect();
+        const thumbPosition = (value / (150 - 40)) * sliderRect.width;
+
+        sliderOutput.style.left = `${thumbPosition}px`;
+    });
+
+}
