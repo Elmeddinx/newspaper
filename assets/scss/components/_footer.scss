@@ -1,0 +1,82 @@
+footer {
+    background-color: #000000;
+    padding-top: 56px;
+    .row-1 {
+        margin-bottom: 40px;
+        .navbar-brand {
+            color: #fff;
+            font-size: 45px;
+            @include mq(phone-only) {
+                font-size: 30px;
+            }
+        }
+        .card-title {
+            color: #fff;
+            font-size: 21px;
+        }
+        .card-text {
+            color: #636363;
+            font-size: 16px;
+        }
+        .input-group-text {
+            background-color: #d9d9d9;
+            border: none;
+            border-radius: 8px 0 0 8px;
+        }
+        .form-control {
+            border: none;
+            background: #d9d9d9;
+            border-radius: 0 8px 8px 0;
+            &:focus {
+                box-shadow: none;
+                outline: none;
+            }
+        }
+        .btn-send {
+            background-color: #d50101;
+            color: white;
+            border-radius: 8px;
+            border: none;
+        }
+        .btn-send:hover {
+            background-color: #b80000;
+        }
+    }
+    .row-2 {
+        margin: 40px 0;
+        .footer-menu {
+            padding-left: 0;
+            row-gap: 18px;
+            &-item {
+                color: #fff;
+                font-size: 16px;
+                list-style: none;
+            }
+            &-link {
+                color: #c9c9c9;
+                font-size: 16px;
+                text-decoration: none;
+                column-gap: 4px;
+            }
+        }
+    }
+    .row-3 {
+        margin-top: 40px;
+        .copyright {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 56px;
+            
+            @include mq(phone-only) {
+                text-align: center;
+            }
+        }
+    }
+    hr {
+        border: 0;
+        width: 100%;
+        height: 2px;
+        margin: 0;
+        background-color: #fff;
+    }
+}

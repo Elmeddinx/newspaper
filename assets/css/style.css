@@ -189,26 +189,34 @@
   background: red;
 }
 
-.section-3-swiper.swiper {
+.section-3-swiper.swiper, .section-4-swiper.swiper, .section-5-swiper.swiper, .section-6-swiper.swiper, .section-7-swiper.swiper {
   padding: 0 36px 50px 36px;
 }
 @media only screen and (max-width: 480px) {
-  .section-3-swiper.swiper {
+  .section-3-swiper.swiper, .section-4-swiper.swiper, .section-5-swiper.swiper, .section-6-swiper.swiper, .section-7-swiper.swiper {
     padding: 0 20px 50px 20px;
   }
 }
 .section-3-swiper .swiper-button-prev:after,
-.section-3-swiper .swiper-button-next:after {
+.section-3-swiper .swiper-button-next:after, .section-4-swiper .swiper-button-prev:after,
+.section-4-swiper .swiper-button-next:after, .section-5-swiper .swiper-button-prev:after,
+.section-5-swiper .swiper-button-next:after, .section-6-swiper .swiper-button-prev:after,
+.section-6-swiper .swiper-button-next:after, .section-7-swiper .swiper-button-prev:after,
+.section-7-swiper .swiper-button-next:after {
   content: "";
 }
-.section-3-swiper .swiper-button-prev {
+.section-3-swiper .swiper-button-prev, .section-4-swiper .swiper-button-prev, .section-5-swiper .swiper-button-prev, .section-6-swiper .swiper-button-prev, .section-7-swiper .swiper-button-prev {
   left: 0;
 }
-.section-3-swiper .swiper-button-next {
+.section-3-swiper .swiper-button-next, .section-4-swiper .swiper-button-next, .section-5-swiper .swiper-button-next, .section-6-swiper .swiper-button-next, .section-7-swiper .swiper-button-next {
   right: 0;
 }
 .section-3-swiper .swiper-button-prev,
-.section-3-swiper .swiper-button-next {
+.section-3-swiper .swiper-button-next, .section-4-swiper .swiper-button-prev,
+.section-4-swiper .swiper-button-next, .section-5-swiper .swiper-button-prev,
+.section-5-swiper .swiper-button-next, .section-6-swiper .swiper-button-prev,
+.section-6-swiper .swiper-button-next, .section-7-swiper .swiper-button-prev,
+.section-7-swiper .swiper-button-next {
   width: 72px;
   height: 72px;
   border-radius: 50%;
@@ -217,24 +225,40 @@
 }
 @media only screen and (max-width: 480px) {
   .section-3-swiper .swiper-button-prev,
-  .section-3-swiper .swiper-button-next {
+  .section-3-swiper .swiper-button-next, .section-4-swiper .swiper-button-prev,
+  .section-4-swiper .swiper-button-next, .section-5-swiper .swiper-button-prev,
+  .section-5-swiper .swiper-button-next, .section-6-swiper .swiper-button-prev,
+  .section-6-swiper .swiper-button-next, .section-7-swiper .swiper-button-prev,
+  .section-7-swiper .swiper-button-next {
     display: none;
   }
 }
 .section-3-swiper .swiper-button-prev i,
-.section-3-swiper .swiper-button-next i {
+.section-3-swiper .swiper-button-next i, .section-4-swiper .swiper-button-prev i,
+.section-4-swiper .swiper-button-next i, .section-5-swiper .swiper-button-prev i,
+.section-5-swiper .swiper-button-next i, .section-6-swiper .swiper-button-prev i,
+.section-6-swiper .swiper-button-next i, .section-7-swiper .swiper-button-prev i,
+.section-7-swiper .swiper-button-next i {
   color: #fff;
 }
 .section-3-swiper .swiper-button-prev.swiper-button-disabled,
-.section-3-swiper .swiper-button-next.swiper-button-disabled {
+.section-3-swiper .swiper-button-next.swiper-button-disabled, .section-4-swiper .swiper-button-prev.swiper-button-disabled,
+.section-4-swiper .swiper-button-next.swiper-button-disabled, .section-5-swiper .swiper-button-prev.swiper-button-disabled,
+.section-5-swiper .swiper-button-next.swiper-button-disabled, .section-6-swiper .swiper-button-prev.swiper-button-disabled,
+.section-6-swiper .swiper-button-next.swiper-button-disabled, .section-7-swiper .swiper-button-prev.swiper-button-disabled,
+.section-7-swiper .swiper-button-next.swiper-button-disabled {
   opacity: 1;
   background: #ebebeb;
 }
 .section-3-swiper .swiper-button-prev.swiper-button-disabled i,
-.section-3-swiper .swiper-button-next.swiper-button-disabled i {
+.section-3-swiper .swiper-button-next.swiper-button-disabled i, .section-4-swiper .swiper-button-prev.swiper-button-disabled i,
+.section-4-swiper .swiper-button-next.swiper-button-disabled i, .section-5-swiper .swiper-button-prev.swiper-button-disabled i,
+.section-5-swiper .swiper-button-next.swiper-button-disabled i, .section-6-swiper .swiper-button-prev.swiper-button-disabled i,
+.section-6-swiper .swiper-button-next.swiper-button-disabled i, .section-7-swiper .swiper-button-prev.swiper-button-disabled i,
+.section-7-swiper .swiper-button-next.swiper-button-disabled i {
   color: #1c274c;
 }
-.section-3-swiper .swiper-pagination .swiper-pagination-bullet-active {
+.section-3-swiper .swiper-pagination .swiper-pagination-bullet-active, .section-4-swiper .swiper-pagination .swiper-pagination-bullet-active, .section-5-swiper .swiper-pagination .swiper-pagination-bullet-active, .section-6-swiper .swiper-pagination .swiper-pagination-bullet-active, .section-7-swiper .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #9d0098;
 }
 
@@ -484,9 +508,96 @@
     order: 4;
   }
 }
+footer {
+  background-color: #000000;
+  padding-top: 56px;
+}
+footer .row-1 {
+  margin-bottom: 40px;
+}
+footer .row-1 .navbar-brand {
+  color: #fff;
+  font-size: 45px;
+}
+@media only screen and (max-width: 480px) {
+  footer .row-1 .navbar-brand {
+    font-size: 30px;
+  }
+}
+footer .row-1 .card-title {
+  color: #fff;
+  font-size: 21px;
+}
+footer .row-1 .card-text {
+  color: #636363;
+  font-size: 16px;
+}
+footer .row-1 .input-group-text {
+  background-color: #d9d9d9;
+  border: none;
+  border-radius: 8px 0 0 8px;
+}
+footer .row-1 .form-control {
+  border: none;
+  background: #d9d9d9;
+  border-radius: 0 8px 8px 0;
+}
+footer .row-1 .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+footer .row-1 .btn-send {
+  background-color: #d50101;
+  color: white;
+  border-radius: 8px;
+  border: none;
+}
+footer .row-1 .btn-send:hover {
+  background-color: #b80000;
+}
+footer .row-2 {
+  margin: 40px 0;
+}
+footer .row-2 .footer-menu {
+  padding-left: 0;
+  row-gap: 18px;
+}
+footer .row-2 .footer-menu-item {
+  color: #fff;
+  font-size: 16px;
+  list-style: none;
+}
+footer .row-2 .footer-menu-link {
+  color: #c9c9c9;
+  font-size: 16px;
+  text-decoration: none;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+footer .row-3 {
+  margin-top: 40px;
+}
+footer .row-3 .copyright {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 56px;
+}
+@media only screen and (max-width: 480px) {
+  footer .row-3 .copyright {
+    text-align: center;
+  }
+}
+footer hr {
+  border: 0;
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  background-color: #fff;
+}
+
 main {
   margin-top: 50px;
-  margin-bottom: 300px;
+  margin-bottom: 140px;
 }
 @media only screen and (max-width: 1200px) {
   main .section-1 .right-side .row {
@@ -558,22 +669,22 @@ main .section-1 .vjs-load-progress {
 main .section-1 .vjs-mute-control .vjs-volume-level {
   background-color: #d50101;
 }
-main .section-3 .nav-tabs {
+main .section-3 .nav-tabs, main .section-4 .nav-tabs, main .section-5 .nav-tabs, main .section-6 .nav-tabs, main .section-7 .nav-tabs {
   background-color: #f5f5f5;
   border-radius: 8px;
 }
-main .section-3 .nav-tabs .nav-item button {
+main .section-3 .nav-tabs .nav-item button, main .section-4 .nav-tabs .nav-item button, main .section-5 .nav-tabs .nav-item button, main .section-6 .nav-tabs .nav-item button, main .section-7 .nav-tabs .nav-item button {
   color: #000000;
 }
-main .section-3 .nav-tabs .nav-item button.active {
+main .section-3 .nav-tabs .nav-item button.active, main .section-4 .nav-tabs .nav-item button.active, main .section-5 .nav-tabs .nav-item button.active, main .section-6 .nav-tabs .nav-item button.active, main .section-7 .nav-tabs .nav-item button.active {
   border-bottom: 5px solid #9d0098 !important;
   color: #9d0098;
 }
-main .section-3 .tab-pane-title {
+main .section-3 .tab-pane-title, main .section-4 .tab-pane-title, main .section-5 .tab-pane-title, main .section-6 .tab-pane-title, main .section-7 .tab-pane-title {
   border-left: 9px solid #9d0098;
   padding-left: 12px;
 }
-main .section-3 .tab-pane-all-view {
+main .section-3 .tab-pane-all-view, main .section-4 .tab-pane-all-view, main .section-5 .tab-pane-all-view, main .section-6 .tab-pane-all-view, main .section-7 .tab-pane-all-view {
   color: #9d0098;
   font-size: 18px;
   text-decoration: none;

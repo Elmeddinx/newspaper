@@ -1,6 +1,6 @@
 main {
     margin-top: 50px;
-    margin-bottom: 300px;
+    margin-bottom: 140px;
     .section-1 {
         .right-side {
             .row {
@@ -77,7 +77,7 @@ main {
             background-color: #d50101;
         }
     }
-    .section-3 {
+    .section-3, .section-4, .section-5, .section-6, .section-7 {
         .nav-tabs {
             background-color: #f5f5f5;
             border-radius: 8px;
@@ -101,6 +101,7 @@ main {
             text-decoration: none;
         }
     }
+    
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
