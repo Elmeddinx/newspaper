@@ -166,6 +166,9 @@ body {
   .search-form-mb {
     display: flex !important;
   }
+  .search-bar {
+    display: none;
+  }
 }
 .news-ticker {
   overflow: hidden;
