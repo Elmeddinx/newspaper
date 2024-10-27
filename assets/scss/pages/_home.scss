@@ -1,6 +1,6 @@
 main {
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     .section-1 {
         .right-side {
             .row {
@@ -75,6 +75,30 @@ main {
 
         .vjs-mute-control .vjs-volume-level {
             background-color: #d50101;
+        }
+    }
+    .section-3 {
+        .nav-tabs {
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            .nav-item {
+                button {
+                    color: #000000;
+                    &.active {
+                        border-bottom: 5px solid #9d0098 !important;
+                        color: #9d0098;
+                    }
+                }
+            }
+        }
+        .tab-pane-title {
+            border-left: 9px solid #9d0098;
+            padding-left: 12px;
+        }
+        .tab-pane-all-view {
+            color: #9d0098;
+            font-size: 18px;
+            text-decoration: none;
         }
     }
 }

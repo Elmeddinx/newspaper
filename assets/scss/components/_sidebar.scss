@@ -88,6 +88,9 @@
         .form-control {
             display: none;
         }
+        .flatpickr-calendar {
+            box-shadow: none !important;
+        }
         .flatpickr-calendar.inline {
             width: 100%;
             border-radius: 16px;
