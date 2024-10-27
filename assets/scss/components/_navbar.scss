@@ -11,8 +11,11 @@
 }
 .navbar-nav {
     column-gap: 42px;
-    @include mq(desktop-up) {
+    @include mq(big-desktop-up) {
         column-gap: 20px;
+    }
+    @include mq(desktop-up) {
+        column-gap: 15px;
     }
     @include mq(tablet-landscape-up) {
         padding-top: 30px;
@@ -23,6 +26,9 @@
         color: #fff;
         font-size: 16px;
         padding: 0 !important;
+        @include mq(desktop-up) {
+            font-size: 13px;
+        }
     }
 }
 .navbar-toggler {
@@ -31,6 +37,18 @@
 
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    padding: 12px;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+    border: 1px solid #fff;
 }
 .search-input {
     padding-left: 36px;
@@ -52,7 +70,27 @@
 }
 .search-form-mb {
     display: none !important;
-    @include mq(tablet-landscape-up) {
+}
+.search-bar {
+    background-color: #d50101;
+    padding: 15px;
+    position: absolute;
+    top: 119px;
+    right: 0;
+    transform: translateX(100%);
+    transition: .4s;
+    &.active {
+        transition: .4s;
+        transform: translateX(0);
+    }
+}
+@media only screen and (min-width: 993px) {
+    .search-form-lg {
+        display: flex !important;
+    }
+}
+@media only screen and (max-width: 993px) {
+    .search-form-mb {
         display: flex !important;
     }
 }

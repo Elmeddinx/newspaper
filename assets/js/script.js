@@ -1,3 +1,16 @@
+var searchBtn = document.getElementById("search-btn");
+var searchBar = document.getElementById("search-bar");
+searchBtn.addEventListener("click", (event) => {
+    searchBar.classList.toggle("active");
+    event.stopPropagation();
+});
+document.addEventListener("click", (event) => {
+    if (!searchBar.contains(event.target) && !searchBtn.contains(event.target)) {
+        searchBar.classList.remove("active");
+    }
+});
+
+
 var swiper = new Swiper(".big-post-swiper", {
     autoplay: {
         delay: 2500,
