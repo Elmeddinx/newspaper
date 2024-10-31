@@ -1,3 +1,4 @@
 .big-post-swiper .swiper-pagination-bullets {
     top: 62% !important;
+    height: fit-content;
 }
