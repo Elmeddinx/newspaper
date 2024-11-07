@@ -13,10 +13,10 @@ document.addEventListener("click", (event) => {
 
 if (document.body.id === "home") {
     var swiper = new Swiper(".big-post-swiper", {
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 2500,
+        //     disableOnInteraction: false,
+        // },
         loop: true,
         pagination: {
             el: ".swiper-pagination",
