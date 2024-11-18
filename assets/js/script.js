@@ -10,6 +10,60 @@ document.addEventListener("click", (event) => {
     }
 });
 
+// Bu hissə əlavə ediləcək
+document.addEventListener('DOMContentLoaded', function () {
+    const menuList = document.getElementById('menu-list');
+    const moreMenu = document.getElementById('more-menu');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+
+    function getMaxVisibleItems() {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 992) {
+            return null;
+        } else if (screenWidth >= 992 && screenWidth < 1100) {
+            return 6;
+        } else if (screenWidth >= 1100 && screenWidth < 1250) {
+            return 8;
+        } else {
+            return 9;
+        }
+    }
+
+    function adjustMenu() {
+        const maxVisibleItems = getMaxVisibleItems();
+
+        if (maxVisibleItems === null) {
+            dropdownMenu.innerHTML = '';
+            moreMenu.classList.add('d-none');
+            Array.from(menuList.children).forEach(item => (item.style.display = 'inline-block'));
+            return;
+        }
+
+        dropdownMenu.innerHTML = '';
+        moreMenu.classList.add('d-none');
+
+        const menuItems = Array.from(menuList.children);
+
+        menuItems.forEach(item => (item.style.display = 'inline-block'));
+
+        for (let i = maxVisibleItems; i < menuItems.length; i++) {
+            dropdownMenu.appendChild(menuItems[i].cloneNode(true));
+            menuItems[i].style.display = 'none';
+            moreMenu.classList.remove('d-none');
+        }
+    }
+    adjustMenu();
+    window.addEventListener('resize', adjustMenu);
+});
+
+// Bu hissə əlavə ediləcək
+
+
+
+
+
+
+
 
 if (document.body.id === "home") {
     var swiper = new Swiper(".big-post-swiper", {

@@ -35,7 +35,7 @@
     margin-bottom: 0 !important;
 }
 .news-ticker {
-        padding: 15px 0 15px 0;
+    padding: 15px 0 15px 0;
 }
 @media only screen and (min-width: 1200px) {
     .section-1 .right-side .row {
@@ -49,3 +49,52 @@
     }
 }
 /*07.11.2024 added date*/
+
+/*18.11.2024 added date || Bu hissə əlavə ediləcək*/
+#more-menu {
+    position: relative;
+    color: white;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1024px) {
+    #more-menu {
+        padding-top: 10px;
+    }
+}
+#more-menu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: -140px;
+    background-color: #d50101;
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    row-gap: 15px;
+    z-index: 10;
+}
+#more-menu .nav-item {
+    width: 100%;
+}
+#more-menu .nav-item a{
+    color: #fff;
+}
+
+#more-menu:hover .dropdown-menu,
+#more-menu:focus .dropdown-menu {
+    display: flex;
+}
+
+.d-none {
+    display: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+    .navbar-nav .nav-link {
+        font-size: 16px !important;
+        white-space: nowrap;
+    }
+}
+
+/*18.11.2024 added date || Bu hissə əlavə ediləcək*/
